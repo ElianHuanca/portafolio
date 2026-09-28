@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Elian Huanca | Portafolio</title>
+    <title>Elian Huanca | Portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,54 +14,52 @@
 
 <body class="bg-dark text-light">
 
+    <!-- LANGUAGE SWITCHER -->
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050;">
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" id="btn-en" class="btn btn-outline-light" onclick="setLang('en')">EN</button>
+            <button type="button" id="btn-es" class="btn btn-outline-light" onclick="setLang('es')">ES</button>
+        </div>
+    </div>
+
     <!-- HERO -->
     <header class="container text-center py-5">
         <h1 class="fw-bold">Ing. Elian Rene Huanca Choque</h1>
-        <p class="text-secondary fs-5">Fullstack Developer | Web - Mobile</p>
+        <p class="text-secondary fs-5" data-i18n="hero.subtitle"></p>
 
-        <!-- Skills -->
-        <!-- <div class="mt-3">
-        <span class="badge bg-primary me-1">PHP</span>
-        <span class="badge bg-success me-1">Java</span>
-        <span class="badge bg-info text-dark me-1">Docker</span>
-        <span class="badge bg-warning text-dark me-1">MySQL</span>
-        <span class="badge bg-secondary me-1">JavaScript</span>
-    </div> -->
-
-        <!-- Icons -->
-        <!-- <div class="fs-2 mt-4">
-        <i class="bi bi-filetype-html mx-2"></i>
-        <i class="bi bi-filetype-css mx-2"></i>
-        <i class="bi bi-filetype-js mx-2"></i>
-        <i class="bi bi-filetype-php mx-2"></i>
-        <i class="bi bi-box-seam mx-2"></i>
-        <i class="bi bi-git mx-2"></i>
-    </div> -->
+        <div class="mt-3">
+            <a href="mailto:huancacori@gmail.com" class="btn btn-outline-light btn-sm me-2">
+                <i class="bi bi-envelope"></i> huancacori@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/elian-huanca" target="_blank" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+        </div>
     </header>
 
     <!-- STUDIES -->
     <section class="container py-4">
         <h2 class="border-bottom pb-2 mb-3">
-            <i class="bi bi-mortarboard"></i> Estudios
+            <i class="bi bi-mortarboard"></i> <span data-i18n="studies.title"></span>
         </h2>
 
         <div class="card bg-secondary bg-opacity-10 border-0">
             <div class="card-body">
-                <h5 class="card-title">Ingenieria en sistemas</h5>
+                <h5 class="card-title" data-i18n="studies.s1.title"></h5>
                 <p class="card-text">Universidad Autonoma Gabriel Rene Moreno</p>
                 <span class="text-secondary">2018 – 2025</span>
             </div>
 
             <div class="card-body">
-                <h5 class="card-title">Dev Ops Essential (Scrum - Linux - CI/CD - Testing - Docker)</h5>
+                <h5 class="card-title">DevOps Essentials (Scrum - Linux - CI/CD - Testing - Docker)</h5>
                 <p class="card-text">School Of Engineering (SOE)</p>
-                <span class="text-secondary">Septiembre 2024 - Marzo 2025</span>
+                <span class="text-secondary" data-i18n="studies.s2.date"></span>
             </div>
 
             <div class="card-body">
-                <h5 class="card-title">Ingles C1</h5>
-                <p class="card-text">Curso Autofinanciado De Idiomas (CAI)</p>
-                <span class="text-secondary">2023 - Actualidad</span>
+                <h5 class="card-title" data-i18n="studies.s3.title"></h5>
+                <p class="card-text" data-i18n="studies.s3.school"></p>
+                <span class="text-secondary" data-i18n="studies.s3.date"></span>
             </div>
         </div>
     </section>
@@ -69,84 +67,64 @@
     <!-- WORK EXPERIENCE -->
     <section class="container py-4">
         <h2 class="border-bottom pb-2 mb-3">
-            <i class="bi bi-briefcase"></i> EXPERIENCIA PROFESIONAL
+            <i class="bi bi-briefcase"></i> <span data-i18n="exp.title"></span>
         </h2>
 
         <div class="card bg-secondary bg-opacity-10 border-0">
             <div class="card-body">
-                <h5 class="card-title">Coritex</h5>
-                <p class="card-text">
-                    Desarrollo de un sistema de gestión de inventario compuesto por una aplicación web y una 
-aplicación móvil multiplataforma en Flutter. 
-                </p>
+                <h5 class="card-title" data-i18n="exp.datec.title"></h5>
+                <p class="card-text" data-i18n="exp.datec.intro"></p>
                 <ul>
-                    <li>Desarrollo de app móvil flutter para la gestión de ventas, registro de transacciones y operación móvil.</li>
-                    <li>Desarrollo de aplicación web en laravel para la gestión de inventarios y compras, implementando el 
-modelo punto de reorden para control automático de stock.</li>
-                    <li>Implementación de arquitectura limpia, separando presentación, dominio y datos para mejorar la 
-mantenibilidad del sistema.</li>
-                    <li>Consumo de servicios backend para la gestión de productos, compras, ventas y usuarios.</li>
-                    <li>Generación de reportes en Excel y PDF desde el sistema.</li>
-                    <li>Visualización de métricas mediante gráficos interactivos con filtros dinámicos. </li>
-                    <li>Configuración de CI/CD con Github Actions para automatizar procesos de build y validación.</li>
+                    <li data-i18n="exp.datec.li1"></li>
+                    <li data-i18n="exp.datec.li2"></li>
+                    <li data-i18n="exp.datec.li3"></li>
+                    <li data-i18n="exp.datec.li4"></li>
+                    <li data-i18n="exp.datec.li5"></li>
+                    <li data-i18n="exp.datec.li6"></li>
                 </ul>
-                <span class="text-secondary">Septiembre - Diciembre, 2025</span>
+                <span class="text-secondary" data-i18n="exp.datec.date"></span>
             </div>
 
             <div class="card-body">
-                <h5 class="card-title">Pasantia en Servitek</h5>
-                <p class="card-text">
-                    Desarrollo de un sistema de gestion de tickets, enfocado en registro y seguimiento de requerimientos
-                    de clientes, asi como en el control de trabajo a los consultores.
-                </p>
+                <h5 class="card-title" data-i18n="exp.servitek.title"></h5>
+                <p class="card-text" data-i18n="exp.servitek.intro"></p>
                 <ul>
-                    <li>Tecnologías utilizadas: PHP, Composer, HTML, CSS, Bootstrap, JavaScript, JQuery y MySQL</li>
-                    <li>Implementación de generación de reportes en Excel y PDF</li>
-                    <li>Integración de Google Charts para visualización de datos mediante gráficos dinámicos e
-                        interactivos con filtros</li>
-                    <li>Despliegue del sistema en un servidor VPS con la distribución AlmaLinux</li>
-                    <li>Automatización de backups diarios de la base de datos mediante cron jobs en el servidor</li>
-                    <li>Agregación de pruebas E2E con Cypress y pruebas unitarias con PHPUnit</li>
-                    <li>Adición de CI/CD con GitHub Actions</li>
+                    <li data-i18n="exp.servitek.li1"></li>
+                    <li data-i18n="exp.servitek.li2"></li>
+                    <li data-i18n="exp.servitek.li3"></li>
+                    <li data-i18n="exp.servitek.li4"></li>
+                    <li data-i18n="exp.servitek.li5"></li>
+                    <li data-i18n="exp.servitek.li6"></li>
+                    <li data-i18n="exp.servitek.li7"></li>
                 </ul>
-                <span class="text-secondary">Enero - Julio, 2025</span>
+                <span class="text-secondary" data-i18n="exp.servitek.date"></span>
             </div>
 
             <div class="card-body">
-                <h5 class="card-title">Pasantia en Constructora Pentagono</h5>
-                <p class="card-text">
-                    Desarrollo de un sistema de gestion
-                </p>
+                <h5 class="card-title" data-i18n="exp.pentagono.title"></h5>
+                <p class="card-text" data-i18n="exp.pentagono.intro"></p>
                 <ul>
-                    <li>Tecnologías utilizadas: PHP, Composer, HTML, CSS, Bootstrap, JavaScript, JQuery y MySQL</li>
-                    <li>Se aplico reportes en Excel y generacion de contratos en PDF, con plan de pagos</li>
-                    <li>Se utilizo Google Chart para generar graficas dinamicas con filtros interactivos</li>
-                    <li>Diseñe e integre un sistema de bitacora y un control de roles y permisos para gestionar usuarios
-                        y acessos </li>
-                    <li>Realice la integracion con SAP a traves de APIs, permitiendo la creacion y actualizacion de
-                        datos de socios de negocio</li>
+                    <li data-i18n="exp.pentagono.li1"></li>
+                    <li data-i18n="exp.pentagono.li2"></li>
+                    <li data-i18n="exp.pentagono.li3"></li>
+                    <li data-i18n="exp.pentagono.li4"></li>
+                    <li data-i18n="exp.pentagono.li5"></li>
                 </ul>
-                <span class="text-secondary">Septiembre - Noviembre, 2024</span>
+                <span class="text-secondary" data-i18n="exp.pentagono.date"></span>
             </div>
 
             <div class="card-body">
-                <h5 class="card-title">Pasantia En Dualbiz</h5>
-                <p class="card-text">
-                    Atencion al cliente realizando soporte de un Sistema ERP
-                </p>
+                <h5 class="card-title" data-i18n="exp.dualbiz.title"></h5>
+                <p class="card-text" data-i18n="exp.dualbiz.intro"></p>
                 <ul>
-                    <li>Proporcionaba soporte a los problemas que presentaban los clientes en el sistema ERP</li>
-                    <li>Realice analisis de las bases de datos de clientes en SQL Server para identificar y resolver
-                        incidencias</li>
-                    <li>Revise y analice el codigo fuente del sistema desarrollado con Visual Basic en ASP .NET y que
-                        utilizaba los paquetes de componentes Telerik para ASP .NET</li>
-                    <li>Utilice Git para el control de versiones y la gestion de cambios en el codigo</li>
-                    <li>Actualice las versiones del sistema web en Internet Information Server (IIS) sobre Windows
-                        Server 2019</li>
-                    <li>Implemente reportes en formato Excel y PDF, utilizando componentes Telerik para la generacion de
-                        PDFs</li>
+                    <li data-i18n="exp.dualbiz.li1"></li>
+                    <li data-i18n="exp.dualbiz.li2"></li>
+                    <li data-i18n="exp.dualbiz.li3"></li>
+                    <li data-i18n="exp.dualbiz.li4"></li>
+                    <li data-i18n="exp.dualbiz.li5"></li>
+                    <li data-i18n="exp.dualbiz.li6"></li>
                 </ul>
-                <span class="text-secondary">Febrero - Mayo, 2024</span>
+                <span class="text-secondary" data-i18n="exp.dualbiz.date"></span>
             </div>
         </div>
     </section>
@@ -154,28 +132,27 @@ mantenibilidad del sistema.</li>
     <!-- PROJECTS -->
     <section class="container py-4">
         <h2 class="border-bottom pb-2 mb-3">
-            <i class="bi bi-folder"></i> Proyectos Personales
+            <i class="bi bi-folder"></i> <span data-i18n="proj.title"></span>
         </h2>
 
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="card bg-secondary bg-opacity-10 border-0 h-100">
                     <div class="card-body">
-                        <h4 class="card-title">Simulador de cajero ATM <a
-                                href="https://elianhuanca.github.io/simulador-cajeroatm/"
+                        <h4 class="card-title">
+                            <span data-i18n="proj.atm.title"></span>
+                            <a href="https://elianhuanca.github.io/simulador-cajeroatm/"
                                 class="btn btn-outline-primary btn-sm mb-2">
-                                <i class="bi bi-globe"></i> sitio web
-                            </a></h4>
-                        <p class="card-text">
-                            Es un simulador de cajero ATM, que cuenta con 3 patrones
-                            de diseño: cadena de responsabilidad, estado y observador.
-                        </p>
-                        <h5>Tecnologias</h5>
-                        <i class="bi bi-typescript"></i> Typescript 
-                        <i class="bi bi-javascript"></i> JavaScript 
-                        <i class="bi bi-filetype-html"></i> HTML 
-                        <i class="bi bi-bootstrap"></i> Bootstrap 
-                        <h5 class="mt-2">Diagrama de clase dinamica</h5>
+                                <i class="bi bi-globe"></i> <span data-i18n="proj.website"></span>
+                            </a>
+                        </h4>
+                        <p class="card-text" data-i18n="proj.atm.desc"></p>
+                        <h5 data-i18n="proj.tech"></h5>
+                        <i class="bi bi-typescript"></i> Typescript
+                        <i class="bi bi-javascript"></i> JavaScript
+                        <i class="bi bi-filetype-html"></i> HTML
+                        <i class="bi bi-bootstrap"></i> Bootstrap
+                        <h5 class="mt-2" data-i18n="proj.atm.diagram"></h5>
                         <img src="assets/DiagramaDeClasesDinamico.png" alt="" class="img-fluid img-preview"
                             data-src="assets/DiagramaDeClasesDinamico.png" style="cursor:pointer">
                     </div>
@@ -185,58 +162,40 @@ mantenibilidad del sistema.</li>
             <div class="col-md-6">
                 <div class="card bg-secondary bg-opacity-10 border-0 h-100">
                     <div class="card-body">
-                        <h4 class="card-title">Diagramador de clases multi-usuarios <a
-                                href="https://github.com/ElianHuanca/DiagramadorDeClases/blob/main/README.es.md"
+                        <h4 class="card-title">
+                            <span data-i18n="proj.uml.title"></span>
+                            <a href="https://github.com/ElianHuanca/DiagramadorDeClases/blob/main/README.es.md"
                                 class="btn btn-outline-primary btn-sm">
                                 <i class="bi bi-github"></i> GitHub
-                            </a></h4>
-                        <p class="card-text">
-                            Es una plataforma web que permite a los usuarios crear diagramas de clases UML de manera colaborativa en tiempo real utilizando
-                            sockets para la comunicación entre clientes y servidor.
-                        </p>
-                        <h5>Tecnologias</h5>
+                            </a>
+                        </h4>
+                        <p class="card-text" data-i18n="proj.uml.desc"></p>
+                        <h5 data-i18n="proj.tech"></h5>
                         <i class="bi bi-box"></i> Node JS
                         <i class="bi bi-filetype-jsx"></i> React JS
                         <i class="bi bi-filetype-css"></i> Tailwind CSS
                         <i class="bi bi-filetype-sql"></i> MongoDB
-                        <h4 class="card-title mt-4">App de gestion de actividades <a
-                                href="https://github.com/ElianHuanca/Iglesia-MVC-Android-Java/blob/main/README.es.md"
+                        <h4 class="card-title mt-4">
+                            <span data-i18n="proj.church.title"></span>
+                            <a href="https://github.com/ElianHuanca/Iglesia-MVC-Android-Java/blob/main/README.es.md"
                                 class="btn btn-outline-primary btn-sm">
                                 <i class="bi bi-github"></i> GitHub
-                            </a></h4>
-                        <p class="card-text">
-                            Es una aplicacion movil que permite a los usuarios
-                            gestionar actividades de una iglesia aplicando la arquitectura MVC
-                        </p>
-                        <h5>Tecnologias</h5>
+                            </a>
+                        </h4>
+                        <p class="card-text" data-i18n="proj.church.desc"></p>
+                        <h5 data-i18n="proj.tech"></h5>
                         <i class="bi bi-filetype-java"></i> Java
                         <i class="bi bi-android"></i> Android Studio
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="col-md-6">
-                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">App Movil de gestion de actividades de iglesia<a
-                                href="https://github.com/ElianHuanca/Iglesia-MVC-Android-Java/blob/main/README.es.md"
-                                class="btn btn-outline-primary btn-sm">
-                                <i class="bi bi-github"></i> GitHub
-                            </a></h5>
-                        <p class="card-text">
-                            Desarrollado en Java con Android Studio, es una aplicacion movil que permite a los usuarios
-                            gestionar actividades de una iglesia aplicando la arquitectura MVC
-                        </p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
 
     <!-- CHALLENGES -->
     <section class="container py-4">
         <h2 class="border-bottom pb-2 mb-3">
-            <i class="bi bi-lightning"></i> Desafios
+            <i class="bi bi-lightning"></i> <span data-i18n="chall.title"></span>
         </h2>
 
         <div class="row g-3">
@@ -245,12 +204,8 @@ mantenibilidad del sistema.</li>
                     <div class="card-body">
                         <img src="assets/space_2025.png" alt="" class="img-fluid img-preview"
                             data-src="assets/space_2025.png" style="cursor:pointer">
-                        <h5 class="card-title">Hackaton Space Apps 2025</h5>
-                        <p class="card-text">
-                            Desarrollo de una aplicación móvil para la predicción de condiciones climáticas futuras
-                            mediante el análisis de datos históricos, apoyada en una API de predicción y bibliotecas
-                            especializadas de Python para modelado climático.
-                        </p>
+                        <h5 class="card-title" data-i18n="chall.c2025.title"></h5>
+                        <p class="card-text" data-i18n="chall.c2025.desc"></p>
                         <div class="row">
                             <div class="col-md-3">
                                 <img src="assets/space25-ui1.png" alt="" class="img-fluid img-preview"
@@ -277,14 +232,8 @@ mantenibilidad del sistema.</li>
                     <div class="card-body">
                         <img src="assets/space_2024.jpg" alt="" class="img-fluid img-preview"
                             data-src="assets/space_2024.jpg" style="cursor:pointer">
-                        <h5 class="card-title">Hackaton Space Apps 2024</h5>
-                        <p class="card-text">
-                            Desarrollo de un sistema software que integra datos satelitales de incendios forestales y
-                            los representa en un mapa interactivo.
-                            El sistema incorpora la aplicación del índice meteorológico Fire Weather Index (FWI) para la
-                            predicción del riesgo de incendios forestales, permitiendo consultar el grado de peligro
-                            según una ubicación determinada y hasta cinco fechas futuras.
-                        </p>
+                        <h5 class="card-title" data-i18n="chall.c2024.title"></h5>
+                        <p class="card-text" data-i18n="chall.c2024.desc"></p>
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="assets/incendios.png" class="img-fluid img-preview"
@@ -302,9 +251,10 @@ mantenibilidad del sistema.</li>
         </div>
     </section>
 
+    <!-- TECHNOLOGIES -->
     <section class="container py-4">
         <h2 class="border-bottom pb-2 mb-3">
-            <i class="bi bi-tools"></i> Tecnologias
+            <i class="bi bi-tools"></i> <span data-i18n="tech.title"></span>
         </h2>
 
         <!-- Frameworks -->
@@ -314,15 +264,17 @@ mantenibilidad del sistema.</li>
             <span class="badge bg-primary me-1 mb-1">React</span>
             <span class="badge bg-primary me-1 mb-1">Node.js</span>
             <span class="badge bg-primary me-1 mb-1">Flutter</span>
+            <span class="badge bg-primary me-1 mb-1">Jetpack Compose</span>
             <span class="badge bg-primary me-1 mb-1">FastAPI</span>
             <span class="badge bg-primary me-1 mb-1">ASP .NET</span>
         </div>
 
         <!-- Languages -->
         <div class="mb-3">
-            <h5>Lenguajes de programacion</h5>
+            <h5 data-i18n="tech.langs"></h5>
             <span class="badge bg-success me-1 mb-1">PHP</span>
             <span class="badge bg-success me-1 mb-1">Dart</span>
+            <span class="badge bg-success me-1 mb-1">Kotlin</span>
             <span class="badge bg-success me-1 mb-1">Python</span>
             <span class="badge bg-success me-1 mb-1">JavaScript</span>
             <span class="badge bg-success me-1 mb-1">Java</span>
@@ -339,7 +291,7 @@ mantenibilidad del sistema.</li>
 
         <!-- Other Technologies -->
         <div class="mb-3">
-            <h5>Otras Tecnologias</h5>
+            <h5 data-i18n="tech.other"></h5>
             <span class="badge bg-info text-dark me-1 mb-1">n8n</span>
             <span class="badge bg-info text-dark me-1 mb-1">Docker</span>
             <span class="badge bg-info text-dark me-1 mb-1">Figma</span>
@@ -348,6 +300,7 @@ mantenibilidad del sistema.</li>
             <span class="badge bg-info text-dark me-1 mb-1">Draw.io</span>
         </div>
     </section>
+
     <!-- FOOTER -->
     <footer class="text-center py-4 text-secondary">
         © 2026 Ing. Elian Rene Huanca Choque
@@ -362,9 +315,175 @@ mantenibilidad del sistema.</li>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        const translations = {
+            en: {
+                "page.title": "Elian Huanca | Portfolio",
+                "hero.subtitle": "Systems Engineer | Flutter & Kotlin Mobile Developer | Full-Stack",
+
+                "studies.title": "Education",
+                "studies.s1.title": "Systems Engineering",
+                "studies.s2.date": "September 2024 - March 2025",
+                "studies.s3.title": "English C1",
+                "studies.s3.school": "Self-Financed Language Course (CAI)",
+                "studies.s3.date": "2023 - Present",
+
+                "exp.title": "WORK EXPERIENCE",
+
+                "exp.datec.title": "Datec Corp — Mobile Developer",
+                "exp.datec.intro": "I'm part of the team building Datec's super-app in Flutter: a single experience that brings together delivery, marketplace, a digital wallet, and an AI assistant.",
+                "exp.datec.li1": "Turbo (delivery) and EGX (marketplace) share a cart engine that only updates state after backend confirmation.",
+                "exp.datec.li2": "Dpay: a digital wallet with QR charge/pay flows and transaction history.",
+                "exp.datec.li3": "Lucy: the AI agent that is now the landing screen right after login.",
+                "exp.datec.li4": "Dynamic, CMS-driven home screen — content changes without needing a release.",
+                "exp.datec.li5": "Modular clean architecture with BLoC, one module per business domain, get_it for DI, biometric login, and secure tokens.",
+                "exp.datec.li6": "EGX Staff (Android/Kotlin): QR-based access control app for EGX events — Kotlin + Jetpack Compose, MVVM, CameraX + ML Kit scanning, PASETO tokens, Koin for DI, and three layers of session-expiry detection.",
+                "exp.datec.date": "March 2026 – Present",
+
+                "exp.servitek.title": "Internship at Servitek",
+                "exp.servitek.intro": "Development of a ticketing management system focused on logging and tracking client requirements, as well as monitoring consultant activity.",
+                "exp.servitek.li1": "Technologies used: PHP, Composer, HTML, CSS, Bootstrap, JavaScript, jQuery, and MySQL.",
+                "exp.servitek.li2": "Implemented Excel and PDF report generation.",
+                "exp.servitek.li3": "Integrated Google Charts for dynamic, interactive data visualization with filters.",
+                "exp.servitek.li4": "Deployed the system on a VPS running AlmaLinux.",
+                "exp.servitek.li5": "Automated daily database backups via cron jobs on the server.",
+                "exp.servitek.li6": "Added E2E testing with Cypress and unit testing with PHPUnit.",
+                "exp.servitek.li7": "Added CI/CD with GitHub Actions.",
+                "exp.servitek.date": "January - July, 2025",
+
+                "exp.pentagono.title": "Internship at Constructora Pentagono",
+                "exp.pentagono.intro": "Development of an enterprise management system.",
+                "exp.pentagono.li1": "Technologies used: PHP, Composer, HTML, CSS, Bootstrap, JavaScript, jQuery, and MySQL.",
+                "exp.pentagono.li2": "Built Excel reports and automated PDF contract generation with payment plans.",
+                "exp.pentagono.li3": "Used Google Charts to generate dynamic charts with interactive filters.",
+                "exp.pentagono.li4": "Designed and integrated an activity log system along with role- and permission-based access control for user and access management.",
+                "exp.pentagono.li5": "Integrated with SAP through APIs, enabling the creation and updating of business partner data.",
+                "exp.pentagono.date": "September - November, 2024",
+
+                "exp.dualbiz.title": "Internship at Dualbiz",
+                "exp.dualbiz.intro": "Customer support for an ERP system.",
+                "exp.dualbiz.li1": "Provided support for issues clients encountered in the ERP system.",
+                "exp.dualbiz.li2": "Performed SQL Server database analysis to diagnose and resolve incidents.",
+                "exp.dualbiz.li3": "Reviewed and analyzed the system's source code, developed in Visual Basic on ASP.NET using Telerik component packages.",
+                "exp.dualbiz.li4": "Used Git for version control and change management.",
+                "exp.dualbiz.li5": "Updated web system versions on Internet Information Services (IIS) over Windows Server 2019.",
+                "exp.dualbiz.li6": "Implemented Excel and PDF reports, using Telerik components for PDF generation.",
+                "exp.dualbiz.date": "February - May, 2024",
+
+                "proj.title": "Personal Projects",
+                "proj.website": "website",
+                "proj.tech": "Technologies",
+                "proj.atm.title": "ATM Simulator",
+                "proj.atm.desc": "An ATM simulator built with 3 design patterns: chain of responsibility, state, and observer.",
+                "proj.atm.diagram": "Dynamic class diagram",
+                "proj.uml.title": "Multi-user class diagram tool",
+                "proj.uml.desc": "A web platform that lets users create UML class diagrams collaboratively in real time, using sockets for client-server communication.",
+                "proj.church.title": "Activity management app",
+                "proj.church.desc": "A mobile app that lets users manage church activities, applying the MVC architecture.",
+
+                "chall.title": "Challenges",
+                "chall.c2025.title": "Space Apps Hackathon 2025",
+                "chall.c2025.desc": "Development of a mobile app to predict future weather conditions by analyzing historical data, supported by a prediction API and specialized Python libraries for climate modeling.",
+                "chall.c2024.title": "Space Apps Hackathon 2024",
+                "chall.c2024.desc": "Development of a software system that integrates satellite wildfire data and displays it on an interactive map. The system applies the Fire Weather Index (FWI) to predict wildfire risk, allowing users to check the danger level for a given location and up to five future dates.",
+
+                "tech.title": "Technologies",
+                "tech.langs": "Programming languages",
+                "tech.other": "Other technologies"
+            },
+            es: {
+                "page.title": "Elian Huanca | Portafolio",
+                "hero.subtitle": "Ingeniero de Sistemas | Desarrollador Mobile Flutter & Kotlin | Full-Stack",
+
+                "studies.title": "Estudios",
+                "studies.s1.title": "Ingenieria en sistemas",
+                "studies.s2.date": "Septiembre 2024 - Marzo 2025",
+                "studies.s3.title": "Ingles C1",
+                "studies.s3.school": "Curso Autofinanciado De Idiomas (CAI)",
+                "studies.s3.date": "2023 - Actualidad",
+
+                "exp.title": "EXPERIENCIA PROFESIONAL",
+
+                "exp.datec.title": "Datec Corp — Mobile Developer",
+                "exp.datec.intro": "Soy parte del equipo que construye la super-app de Datec en Flutter: una sola experiencia que integra delivery, marketplace, billetera digital y un asistente de IA.",
+                "exp.datec.li1": "Turbo (delivery) y EGX (marketplace) comparten un motor de carrito que solo actualiza el estado tras la confirmacion del backend.",
+                "exp.datec.li2": "Dpay: billetera digital con flujos de cobro/pago por QR e historial de transacciones.",
+                "exp.datec.li3": "Lucy: el agente de IA que ahora es la pantalla inicial justo despues del login.",
+                "exp.datec.li4": "Home dinamico gestionado por CMS — el contenido cambia sin necesidad de publicar una nueva version.",
+                "exp.datec.li5": "Arquitectura limpia modular con BLoC, un modulo por dominio de negocio, get_it para DI, login biometrico y tokens seguros.",
+                "exp.datec.li6": "EGX Staff (Android/Kotlin): app de control de acceso por QR para eventos EGX — Kotlin + Jetpack Compose, MVVM, escaneo con CameraX + ML Kit, tokens PASETO, Koin para DI y tres capas de deteccion de sesion expirada.",
+                "exp.datec.date": "Marzo 2026 – Actualidad",
+
+                "exp.servitek.title": "Pasantia en Servitek",
+                "exp.servitek.intro": "Desarrollo de un sistema de gestion de tickets, enfocado en registro y seguimiento de requerimientos de clientes, asi como en el control de trabajo a los consultores.",
+                "exp.servitek.li1": "Tecnologías utilizadas: PHP, Composer, HTML, CSS, Bootstrap, JavaScript, JQuery y MySQL.",
+                "exp.servitek.li2": "Implementación de generación de reportes en Excel y PDF.",
+                "exp.servitek.li3": "Integración de Google Charts para visualización de datos mediante gráficos dinámicos e interactivos con filtros.",
+                "exp.servitek.li4": "Despliegue del sistema en un servidor VPS con la distribución AlmaLinux.",
+                "exp.servitek.li5": "Automatización de backups diarios de la base de datos mediante cron jobs en el servidor.",
+                "exp.servitek.li6": "Agregación de pruebas E2E con Cypress y pruebas unitarias con PHPUnit.",
+                "exp.servitek.li7": "Adición de CI/CD con GitHub Actions.",
+                "exp.servitek.date": "Enero - Julio, 2025",
+
+                "exp.pentagono.title": "Pasantia en Constructora Pentagono",
+                "exp.pentagono.intro": "Desarrollo de un sistema de gestion.",
+                "exp.pentagono.li1": "Tecnologías utilizadas: PHP, Composer, HTML, CSS, Bootstrap, JavaScript, JQuery y MySQL.",
+                "exp.pentagono.li2": "Se aplico reportes en Excel y generacion de contratos en PDF, con plan de pagos.",
+                "exp.pentagono.li3": "Se utilizo Google Chart para generar graficas dinamicas con filtros interactivos.",
+                "exp.pentagono.li4": "Diseñe e integre un sistema de bitacora y un control de roles y permisos para gestionar usuarios y acessos.",
+                "exp.pentagono.li5": "Realice la integracion con SAP a traves de APIs, permitiendo la creacion y actualizacion de datos de socios de negocio.",
+                "exp.pentagono.date": "Septiembre - Noviembre, 2024",
+
+                "exp.dualbiz.title": "Pasantia En Dualbiz",
+                "exp.dualbiz.intro": "Atencion al cliente realizando soporte de un Sistema ERP.",
+                "exp.dualbiz.li1": "Proporcionaba soporte a los problemas que presentaban los clientes en el sistema ERP.",
+                "exp.dualbiz.li2": "Realice analisis de las bases de datos de clientes en SQL Server para identificar y resolver incidencias.",
+                "exp.dualbiz.li3": "Revise y analice el codigo fuente del sistema desarrollado con Visual Basic en ASP .NET y que utilizaba los paquetes de componentes Telerik para ASP .NET.",
+                "exp.dualbiz.li4": "Utilice Git para el control de versiones y la gestion de cambios en el codigo.",
+                "exp.dualbiz.li5": "Actualice las versiones del sistema web en Internet Information Server (IIS) sobre Windows Server 2019.",
+                "exp.dualbiz.li6": "Implemente reportes en formato Excel y PDF, utilizando componentes Telerik para la generacion de PDFs.",
+                "exp.dualbiz.date": "Febrero - Mayo, 2024",
+
+                "proj.title": "Proyectos Personales",
+                "proj.website": "sitio web",
+                "proj.tech": "Tecnologias",
+                "proj.atm.title": "Simulador de cajero ATM",
+                "proj.atm.desc": "Es un simulador de cajero ATM, que cuenta con 3 patrones de diseño: cadena de responsabilidad, estado y observador.",
+                "proj.atm.diagram": "Diagrama de clase dinamica",
+                "proj.uml.title": "Diagramador de clases multi-usuarios",
+                "proj.uml.desc": "Es una plataforma web que permite a los usuarios crear diagramas de clases UML de manera colaborativa en tiempo real utilizando sockets para la comunicación entre clientes y servidor.",
+                "proj.church.title": "App de gestion de actividades",
+                "proj.church.desc": "Es una aplicacion movil que permite a los usuarios gestionar actividades de una iglesia aplicando la arquitectura MVC.",
+
+                "chall.title": "Desafios",
+                "chall.c2025.title": "Hackaton Space Apps 2025",
+                "chall.c2025.desc": "Desarrollo de una aplicación móvil para la predicción de condiciones climáticas futuras mediante el análisis de datos históricos, apoyada en una API de predicción y bibliotecas especializadas de Python para modelado climático.",
+                "chall.c2024.title": "Hackaton Space Apps 2024",
+                "chall.c2024.desc": "Desarrollo de un sistema software que integra datos satelitales de incendios forestales y los representa en un mapa interactivo. El sistema incorpora la aplicación del índice meteorológico Fire Weather Index (FWI) para la predicción del riesgo de incendios forestales, permitiendo consultar el grado de peligro según una ubicación determinada y hasta cinco fechas futuras.",
+
+                "tech.title": "Tecnologias",
+                "tech.langs": "Lenguajes de programacion",
+                "tech.other": "Otras Tecnologias"
+            }
+        };
+
+        function setLang(lang) {
+            document.documentElement.lang = lang;
+            document.title = translations[lang]["page.title"];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const text = translations[lang][el.dataset.i18n];
+                if (text) el.textContent = text;
+            });
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+            localStorage.setItem('lang', lang);
+        }
+
+        setLang(localStorage.getItem('lang') || 'en');
+
         document.querySelectorAll('.img-preview').forEach(img => {
             img.addEventListener('click', function () {
                 const modalImg = document.getElementById('modalImage');
